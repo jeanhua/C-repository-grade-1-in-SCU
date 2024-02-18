@@ -1,5 +1,5 @@
 #include<stdio.h>
-//ÁãÒ¼·¡ÈşËÁÎéÂ½Æâ°Æ¾ÁÊ°°ÛÇªÍò
+//é›¶å£¹è´°åè‚†ä¼é™†æŸ’æŒç–æ‹¾ä½°ä»Ÿä¸‡
 char guanjianzi[8];
 void gaibianguanjianzi(int a)
 {
@@ -7,57 +7,57 @@ void gaibianguanjianzi(int a)
 	{
 	case 0:
 	{
-		sprintf(guanjianzi, "%s", "Áã");
+		sprintf(guanjianzi, "%s", "é›¶");
 		break;
 	}
 	case 1:
 	{
-		sprintf(guanjianzi, "%s", "Ò¼");
+		sprintf(guanjianzi, "%s", "å£¹");
 		break;
 	}
 	case 2:
 	{
-		sprintf(guanjianzi, "%s", "·¡");
+		sprintf(guanjianzi, "%s", "è´°");
 		break;
 	}
 	case 3:
 	{
-		sprintf(guanjianzi, "%s", "Èş");
+		sprintf(guanjianzi, "%s", "å");
 		break;
 	}
 	case 4:
 	{
-		sprintf(guanjianzi, "%s", "ËÁ");
+		sprintf(guanjianzi, "%s", "è‚†");
 		break;
 	}
 	case 5:
 	{
-		sprintf(guanjianzi, "%s", "Îé");
+		sprintf(guanjianzi, "%s", "ä¼");
 		break;
 	}
 	case 6:
 	{
-		sprintf(guanjianzi, "%s", "Â½");
+		sprintf(guanjianzi, "%s", "é™†");
 		break;
 	}
 	case 7:
 	{
-		sprintf(guanjianzi, "%s", "Æâ");
+		sprintf(guanjianzi, "%s", "æŸ’");
 		break;
 	}
 	case 8:
 	{
-		sprintf(guanjianzi, "%s", "°Æ");
+		sprintf(guanjianzi, "%s", "æŒ");
 		break;
 	}
 	case 9:
 	{
-		sprintf(guanjianzi, "%s", "¾Á");
+		sprintf(guanjianzi, "%s", "ç–");
 		break;
 	}
 	case 10:
 	{
-		sprintf(guanjianzi, "%s", "Ê°");
+		sprintf(guanjianzi, "%s", "æ‹¾");
 		break;
 	}
 	}
@@ -72,7 +72,7 @@ int main()
 		scanf("%d", &sum);
 		if (sum < 0)
 		{
-			printf("¸º");
+			printf("è´Ÿ");
 			sum = -sum;
 		}
 		qianwan = (sum % 100000000) / 10000000;
@@ -87,91 +87,91 @@ int main()
 		if (qianwan > 0)
 		{
 			gaibianguanjianzi(qianwan);
-			printf("%sÇª", guanjianzi);
+			printf("%sä»Ÿ", guanjianzi);
 			ifzezo = 1;
 		}
 		else
 		{
 			if (ifzezo == 1&&baiwan!=0)
 			{
-				printf("Áã");
+				printf("é›¶");
 			}
 		}
 		if (baiwan > 0)
 		{
 			gaibianguanjianzi(baiwan);
-			printf("%s°Û", guanjianzi);
+			printf("%sä½°", guanjianzi);
 			ifzezo = 1;
 		}
 		else
 		{
 			if (ifzezo == 1&&shiwan!=0)
 			{
-				printf("Áã");
+				printf("é›¶");
 			}
 		}
 		if (shiwan > 0)
 		{
 			gaibianguanjianzi(shiwan);
-			printf("%sÊ°", guanjianzi);
+			printf("%sæ‹¾", guanjianzi);
 			ifzezo = 1;
 		}
 		else
 		{
 			if (ifzezo == 1&&wan!=0)
 			{
-				printf("Áã");
+				printf("é›¶");
 			}
 		}
 		if (wan > 0)
 		{
 			gaibianguanjianzi(wan);
-			printf("%sÍò", guanjianzi);
+			printf("%sä¸‡", guanjianzi);
 			ifzezo = 1;
 		}
 		else
 		{
 			if (sum >= 10000) {
-				printf("Íò");
+				printf("ä¸‡");
 			}
 		}
 		if (qian > 0)
 		{
 			gaibianguanjianzi(qian);
-			printf("%sÇª", guanjianzi);
+			printf("%sä»Ÿ", guanjianzi);
 			ifzezo = 1;
 		}
 		else
 		{
 			if (ifzezo == 1&&bai!=0)
 			{
-				printf("Áã");
+				printf("é›¶");
 			}
 		}
 		if (bai > 0)
 		{
 			gaibianguanjianzi(bai);
-			printf("%s°Û", guanjianzi);
+			printf("%sä½°", guanjianzi);
 			ifzezo = 1;
 		}
 		else
 		{
 			if (ifzezo == 1&&shi!=0)
 			{
-				printf("Áã");
+				printf("é›¶");
 			}
 		}
 		if (shi > 0)
 		{
 			gaibianguanjianzi(shi);
-			printf("%sÊ°", guanjianzi);
+			printf("%sæ‹¾", guanjianzi);
 			ifzezo = 1;
 		}
 		else
 		{
 			if (ifzezo == 1&&ge!=0)
 			{
-				printf("Áã");
+				printf("é›¶");
 			}
 		}
 		if (ge > 0)
@@ -182,8 +182,8 @@ int main()
 		}
 		else if(sum==0)
 		{
-			printf("Áã");
+			printf("é›¶");
 		}
-		printf("Ô²\n");
+		printf("åœ†\n");
 	}
 }
